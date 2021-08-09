@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <body>
+<!--        <move element="product.info.price" destination="product.info.main" before="product.info.media.image"/>-->
+<!--        <referenceBlock name="product.info.media.image" remove="false"/>-->
+
+<!--        <referenceBlock name="product.info.sku">-->
+<!--            <arguments>-->
+<!--                &lt;!&ndash; Modified block argument &ndash;&gt;-->
+
+<!--                <argument name="at_label" xsi:type="string">MojTekst</argument>-->
+<!--            </arguments>-->
+<!--        </referenceBlock>-->
+
+<!--        <referenceBlock name="product.info.addtocart">-->
+<!--            <arguments>-->
+<!--                <argument name="btn_title" xsi:type="string">guzik</argument>-->
+<!--            </arguments>-->
+<!--        </referenceBlock>-->
+
+    </body>
+</page>
