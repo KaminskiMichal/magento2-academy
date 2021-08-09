@@ -5,9 +5,9 @@
         <referenceContainer name="content">
             <!-- Insert our own custom block "Hello" and define our template hello.phtml. The attribute after="product.info.main" means that the element we have added will show up after product.info.main -->
             <block class="Academy\SuperDuperModule\Block\Hello" name="academy.hello" template="Academy_SuperDuperModule::hello.phtml" after="product.info.main" >
-                <arguments>
-                    <argument name="my_arg" xsi:type="string">testvalue</argument>
-                </arguments>
+<!--                <arguments>-->
+<!--                    <argument name="my_arg" xsi:type="string">testvalue</argument>-->
+<!--                </arguments>-->
             </block>
         </referenceContainer>
     </body>
