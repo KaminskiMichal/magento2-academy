@@ -18,8 +18,8 @@ class WriteHelloWorld extends Command
      */
     protected function configure()
     {
-        $this->setName('write:academy:hello-world');
-        $this->setDescription('This is my first console command.');
+        $this->setName('academy:write:hello-world');
+        $this->setDescription('This command writes some example text into console.');
         $this->addOption(
             self::NAME,
             null,
