@@ -3,7 +3,8 @@
     <type name="Magento\Framework\Console\CommandList">
         <arguments>
             <argument name="commands" xsi:type="array">
-                <item name="exampleSayHello" xsi:type="object">Academy\SuperDuperModule\Console\WriteHelloWorld</item>
+                <item name="writeHelloWorld" xsi:type="object">Academy\SuperDuperModule\Console\WriteHelloWorld</item>
+                <item name="readJsonFile" xsi:type="object">Academy\SuperDuperModule\Console\ReadJsonFile</item>
             </argument>
         </arguments>
     </type>
