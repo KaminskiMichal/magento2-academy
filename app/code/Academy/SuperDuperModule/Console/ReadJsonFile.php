@@ -52,7 +52,8 @@ class ReadJsonFile extends Command
         parent::configure();
     }
 
-    protected function getJsonPathFile() {
+    protected function getJsonPathFile(): string
+    {
 
         $moduleEtcPath = $this->_reader->getModuleDir(
             \Magento\Framework\Module\Dir::MODULE_ETC_DIR,
@@ -86,7 +87,7 @@ class ReadJsonFile extends Command
             $output->writeln('Caught exception: ',  $e->getMessage(), "\n");
         }
 
-        $output->writeln($jsonString.'\n');
+        $output->writeln($jsonString);
 
         $product = $this->_json->unserialize($jsonString);
 //        $output->writeln(var_dump($product));
