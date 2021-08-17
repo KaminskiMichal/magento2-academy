@@ -1,0 +1,12 @@
+{
+  "product": {
+    "sku": "TEST-002",
+    "name": "Test product 2",
+    "attribute_set_id": 9,
+    "price": 50,
+    "status": 1,
+    "visibility": 1,
+    "type_id": "simple",
+    "weight": "1"
+  }
+}
