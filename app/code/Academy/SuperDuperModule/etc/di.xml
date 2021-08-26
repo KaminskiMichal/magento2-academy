@@ -8,4 +8,8 @@
             </argument>
         </arguments>
     </type>
+    <type name="Academy\SuperDuperModule\Console\WriteHelloWorld">
+        <plugin name="ExpandWriteHelloWorld" type="Academy\SuperDuperModule\Plugin\ExpandWriteHelloWorld" sortOrder="1" disabled="false" />
+    </type>
 </config>
+

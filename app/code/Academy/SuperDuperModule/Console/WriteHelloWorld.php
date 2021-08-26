@@ -30,19 +30,22 @@ class WriteHelloWorld extends Command
         parent::configure();
     }
 
-    /**
-     * Execute the command
-     *
-     * @param InputInterface $input
-     * @param OutputInterface $output
-     *
-     * @return null|int
-     */
-    protected function execute(InputInterface $input, OutputInterface $output)
+    public function test(string $test)
+    {
+        echo $test;
+
+
+
+        return 'outputted string';
+    }
+
+    public function execute(InputInterface $input, OutputInterface $output)
     {
         if ($name = $input->getOption(self::NAME)) {
             $output->writeln('<info>Provided name is `' . $name . '`</info>');
         }
+
+        $this->test('original TEXT');
 
         $output->writeln('<info>Success Message.</info>');
         $output->writeln('<error>An error encountered.</error>');

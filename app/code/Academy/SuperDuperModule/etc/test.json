@@ -4,33 +4,36 @@
     "attribute_set_id": 9,
     "price": 25,
     "status": 1,
-    "visibility": 1,
+    "visibility": 4,
     "type_id": "simple",
     "weight": "0.5",
     "categoriesIds": [38, 20, 21, 23, 11, 12, 14],
-    "image": "/f/i/fireshirt.jpeg"
+    "image": "/f/i/fireshirt.jpeg",
+    "brand": "Puma"
   },{
     "sku": "TEST-2",
     "name": "Dragon Shirt",
     "attribute_set_id": 9,
     "price": 25,
     "status": 1,
-    "visibility": 1,
+    "visibility": 4,
     "type_id": "simple",
     "weight": "0.5",
     "categoriesIds": [38, 20, 21, 23, 11, 12, 14],
-    "image": "/d/r/dragonshirt.jpeg"
+    "image": "/d/r/dragonshirt.jpeg",
+    "brand": "Nike"
   },{
     "sku": "TEST-3",
     "name": "Belly Bag",
     "attribute_set_id": 9,
     "price": 15,
     "status": 1,
-    "visibility": 1,
+    "visibility": 4,
     "type_id": "simple",
     "weight": "0.5",
     "categoriesIds": [38, 3, 4],
-    "image": "/b/e/bellybag.jpg"
+    "image": "/b/e/bellybag.jpg",
+    "brand": "Nike"
   }
  ]
 

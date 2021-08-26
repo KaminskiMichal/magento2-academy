@@ -131,16 +131,16 @@ class ReadJsonFile extends Command
                 // Assign category for product
                 ->setCategoryIds($productData["categoriesIds"]); // Category Default
 
-//            $product->setCustomAttribute(
-//                $colorAttr->getAttributeCode(),
-//                $option->getValue()
-//            );
+            $product->setCustomAttribute(
+                'brand',
+                $productData['brand']
+            );
 
             $this->_resourceModel->save($product);
 
             $sourceItem = $this->_sourceItemInterfaceFactory->create();
             $sourceItem->setSourceCode('default');
-            $sourceItem->setQuantity(100);
+            $sourceItem->setQuantity(150);
             $sourceItem->setSku($productData["sku"]);
             $sourceItem->setStatus(1);
 

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "211108b5104353caeb34da7f595e7709",
+    "content-hash": "a9de3fc8c967bc0ab7ca1fc2f98be372",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -22670,6 +22670,53 @@
                 "security"
             ],
             "time": "2018-02-14T22:37:14+00:00"
+        },
+        {
+            "name": "mage2tv/magento-cache-clean",
+            "version": "1.0.42",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mage2tv/magento-cache-clean.git",
+                "reference": "d5b0450508f572cf7446c08decb89364410c47f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mage2tv/magento-cache-clean/zipball/d5b0450508f572cf7446c08decb89364410c47f3",
+                "reference": "d5b0450508f572cf7446c08decb89364410c47f3",
+                "shasum": ""
+            },
+            "suggest": {
+                "magento/project-community-edition": "*"
+            },
+            "bin": [
+                "bin/cache-clean.js"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Vinai Kopp",
+                    "email": "vinai@netzarbeiter.com",
+                    "role": "lead"
+                }
+            ],
+            "description": "A faster drop in replacement for bin/magento cache:clean with file watcher",
+            "homepage": "https://github.com/mage2tv/magento-cache-clean",
+            "keywords": [
+                "development",
+                "magento",
+                "utility"
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/vinai",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-08-14T14:59:38+00:00"
         },
         {
             "name": "magento/magento-coding-standard",
