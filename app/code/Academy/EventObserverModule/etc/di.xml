@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <virtualType name="Magento\Payment\Model\Method\MyCustomDebug" type="Magento\Framework\Logger\Handler\Base">
+        <arguments>
+            <argument name="fileName" xsi:type="string">/var/log/custom.log</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="Magento\Payment\Model\Method\MyCustomLogger" type="Magento\Framework\Logger\Monolog">
+        <arguments>
+            <argument name="handlers" xsi:type="array">
+                <item name="debug" xsi:type="object">Magento\Payment\Model\Method\MyCustomDebug</item>
+            </argument>
+        </arguments>
+    </virtualType>
+
+    <type name="Academy\EventObserverModule\Observer\JsonReceiver">
+        <arguments>
+            <argument name="logger" xsi:type="object">Magento\Payment\Model\Method\MyCustomLogger</argument>
+        </arguments>
+    </type>
+</config>

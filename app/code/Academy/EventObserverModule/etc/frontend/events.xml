@@ -2,4 +2,7 @@
     <event name="checkout_cart_product_add_after">
         <observer name="AmountPriceChanger" instance="Academy\EventObserverModule\Observer\AmountPriceChanger"/>
     </event>
+    <event name="jsmodule_event">
+        <observer name="JsonReceiver" instance="Academy\EventObserverModule\Observer\JsonReceiver"/>
+    </event>
 </config>

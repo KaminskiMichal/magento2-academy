@@ -26,13 +26,12 @@ class Brand extends \Magento\Eav\Model\Entity\Attribute\Backend\AbstractBackend
 
     public function beforeSave($object)
     {
-        //$brands = ['Nike', 'Adidas', 'Puma', 'Reebok'];
         $value = $object->getData($this->getAttribute()->getAttributeCode());
 
         if (in_array($value, $this->brands))
             return true;
 
-        echo 'Error - brand is not one of the following: [Nike, Adidas, Puma, Reebok]';
-        return false;
+        //echo 'Error - brand is not one of the following: [Nike, Adidas, Puma, Reebok]';
+        return true;
     }
 }

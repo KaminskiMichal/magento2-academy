@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="new_product_info" label="New product info" file="new_product_info.html" type="html" module="Academy_EmailModule" area="adminhtml"/>
+    <template id="updated_product_info" label="Updated product info" file="updated_product_info.html" type="html" module="Academy_EmailModule" area="adminhtml"/>
+</config>
+

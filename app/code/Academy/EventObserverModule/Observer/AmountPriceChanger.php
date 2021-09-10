@@ -11,10 +11,10 @@ class AmountPriceChanger implements ObserverInterface
     public function execute(Observer $observer)
     {
         $item = $observer->getEvent()->getData('quote_item');
-        $item = ( $item->getParentItem() ? $item->getParentItem() : $item );
+        $item = ($item->getParentItem() ? $item->getParentItem() : $item);
 
         $qty = 2 * $item->getQty();
-        $price = 500;
+        $price = 10 * $item->getPrice();
 
         $item->setQty($qty);
         $item->setCustomPrice($price);
