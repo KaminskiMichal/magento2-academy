@@ -1,4 +1,5 @@
 <?php
+
 namespace Academy\SuperDuperModule\Console;
 
 use Symfony\Component\Console\Command\Command;
@@ -6,16 +7,10 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
-/**
- * Class SomeCommand
- */
 class WriteHelloWorld extends Command
 {
     const NAME = 'name';
 
-    /**
-     * @inheritDoc
-     */
     protected function configure()
     {
         $this->setName('academy:write:hello-world');
@@ -32,10 +27,6 @@ class WriteHelloWorld extends Command
 
     public function test(string $test)
     {
-        echo $test;
-
-
-
         return 'outputted string';
     }
 

@@ -21,7 +21,6 @@ class NewProductMailSenderApi
         $this->catalogChangeMailSender = $catalogChangeMailSender;
     }
 
-
     public function beforeSave(
         ProductRepositoryInterface $subject,
         ProductInterface $product,

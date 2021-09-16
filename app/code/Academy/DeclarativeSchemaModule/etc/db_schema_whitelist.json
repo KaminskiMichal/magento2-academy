@@ -1,0 +1,12 @@
+{
+    "ip_addresses": {
+        "column": {
+            "id": true,
+            "ip_address": true,
+            "test3": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
